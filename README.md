@@ -6,6 +6,27 @@ A modern, responsive, high-converting one-page referral landing website for **Mu
 - **Referral URL**: `https://muse.ai/join`
 - **Reward**: 1 Billion Muse.ai tokens for the new user + 1 Billion for the referrer upon qualification.
 - **Redemption Tip**: Redeem code in Settings within 48 hours of joining.
+- **Mobile Path**: `Settings → Redeem token`
+- **Web Path**: `Settings → General → Usage → Redeem invite code`
+
+---
+
+## 🧭 Code Redemption Flowchart
+
+```
+Get your friend's invite code (V0B3MP)
+           ↓
+Open Muse and go to the redeem screen:
+  • Mobile: Settings → Redeem token
+  • Web: Settings → General → Usage → Redeem invite code
+           ↓
+Enter the code and confirm
+           ↓
+Was the code accepted?
+  ├─ YES → Reward credited to your account. The redeem entry disappears.
+  └─ NO  → Screen displays diagnostic reason:
+           (invalid, used up, revoked, already redeemed, expired window, too many attempts, temporary failure)
+```
 
 ---
 

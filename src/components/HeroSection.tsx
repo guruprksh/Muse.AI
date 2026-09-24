@@ -123,10 +123,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <span className="text-indigo-400">1B Tokens for Me</span>
                 </div>
 
-                {/* 48-Hour Redemption Tip */}
-                <div className="mt-3 flex items-center gap-1.5 text-xs text-amber-300/90 bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">
-                  <Clock className="w-3.5 h-3.5 shrink-0" />
-                  <span>Redeem in Settings within 48 hours of joining</span>
+                {/* 48-Hour Redemption Tip & Navigation Paths */}
+                <div className="mt-3 flex flex-col items-center gap-1.5 w-full max-w-md">
+                  <div className="flex items-center gap-1.5 text-xs text-amber-300/90 bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">
+                    <Clock className="w-3.5 h-3.5 shrink-0" />
+                    <span>Redeem in Settings within 48 hours of joining</span>
+                  </div>
+                  <div className="text-[11px] font-mono text-slate-400 text-center">
+                    Web: <span className="text-slate-300">Settings → General → Usage</span> · Mobile: <span className="text-slate-300">Settings → Redeem token</span>
+                  </div>
                 </div>
 
                 {/* Small disclaimer */}

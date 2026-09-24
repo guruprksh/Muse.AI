@@ -14,10 +14,10 @@ export const QuickStartBox: React.FC<QuickStartBoxProps> = ({
   const steps = [
     'Copy the code.',
     'Click Join Muse.ai.',
-    'Sign up.',
-    'Apply the code if requested.',
-    'Complete the required steps.',
-    'Check your account for the reward.',
+    'Sign up for an account.',
+    'Go to Settings (Web: General → Usage | Mobile: Redeem token).',
+    'Enter code and confirm within 48h.',
+    'Reward credited & redeem entry disappears!',
   ];
 
   return (

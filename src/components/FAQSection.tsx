@@ -16,7 +16,20 @@ export const FAQSection: React.FC = () => {
     },
     {
       question: 'Where do I enter the code?',
-      answer: `Follow Muse.ai's current signup/referral flow. You can also redeem the code directly in your account Settings within 48 hours of joining. If Muse.ai provides a referral link that automatically applies the code, no manual entry may be necessary.`,
+      answer: (
+        <div className="space-y-2">
+          <p>
+            Open Muse and navigate to the redeem screen based on your device:
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-slate-200 pl-1 font-mono text-xs sm:text-sm">
+            <li><strong className="text-cyan-400 font-sans">Mobile:</strong> Settings → Redeem token</li>
+            <li><strong className="text-indigo-400 font-sans">Web:</strong> Settings → General → Usage → Redeem invite code</li>
+          </ul>
+          <p className="text-slate-300 text-xs">
+            Enter code <strong className="font-mono text-cyan-300">{INVITE_CODE}</strong> and confirm within 48 hours of joining.
+          </p>
+        </div>
+      ),
     },
     {
       question: 'Do I get 1 billion tokens?',
@@ -45,7 +58,24 @@ export const FAQSection: React.FC = () => {
     },
     {
       question: "What if my reward doesn't appear?",
-      answer: `Check that the referral was properly applied (e.g. verified in Settings within 48 hours) and that all current eligibility requirements were completed. Then contact Muse.ai support if necessary.`,
+      answer: (
+        <div className="space-y-2">
+          <p>
+            When you enter the code and confirm, Muse will immediately evaluate the redemption:
+          </p>
+          <ul className="list-disc list-inside space-y-1 text-slate-200 pl-1 text-xs sm:text-sm">
+            <li>
+              <strong className="text-emerald-400">If accepted:</strong> The 1 billion tokens are credited to your account balance, and the redeem entry prompt disappears.
+            </li>
+            <li>
+              <strong className="text-rose-400">If not accepted:</strong> The screen will display the exact diagnostic reason, such as: <em className="text-rose-200">invalid, used up, revoked, already redeemed, expired window (past 48 hours), too many attempts, or a temporary failure</em>.
+            </li>
+          </ul>
+          <p className="text-slate-300 text-xs">
+            If you encounter a temporary network failure or rate limit, wait a moment and try again. For other issues, verify that your account was created within the last 48 hours.
+          </p>
+        </div>
+      ),
     },
     {
       question: 'Can I use the code after creating my account?',

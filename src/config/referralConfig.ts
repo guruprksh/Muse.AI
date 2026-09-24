@@ -20,4 +20,6 @@ export const REFERRAL_DETAILS = {
   redemptionLocation: "Settings",
   platformName: "Muse.ai",
   platformCategory: "Personal AI Agent & Multimedia Workspace",
+  redeemPathMobile: "Settings → Redeem token",
+  redeemPathWeb: "Settings → General → Usage → Redeem invite code",
 } as const;
